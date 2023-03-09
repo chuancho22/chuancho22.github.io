@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  min-height: calc(100vh - 20vh);
+  max-height: calc(100vh - 20vh);
+  background-color: rgb(248, 248, 182);
+}
+
+#main>article {
+  flex: 1;
+}
+
+#main>nav {
+  padding: 0.1em;
+  flex: 0 0 15vw;
+  background: rgb(248, 248, 182);
+  order: -1;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+#siames>article {
+  flex: 1;
+}
+
+#siames>nav {
+  padding: 0.1em;
+  flex: 0 0 15vw;
+  background: #f8f8b6;
+  order: -1;
+  font-size: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+
+footer,
+article,
+aside {
+  padding: 0.8em;
+}
+
+header,
+footer {
+  background: rgb(185, 170, 80);
+  color: rgb(255, 255, 255);
+}
+
+header {
+  padding: 0.2em;
+  height: 10vh;
+  text-align: center;
+  font-size: 2.5em;
+
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: middle;
+  align-self: center;
+  justify-content: center;
+}
+
+footer {
+  height: 10vh;
+  text-align: right;
+  font-size: 1.5em;
+}
+
+#mainfoto {
+
+  overflow: auto;
+}
+
+.foto_texto {
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  flex-grow: 1;
+
+  background-color: rgb(248, 248, 182);
+}
+
+#foto_crop {
+  object-position: 0 0;
+  object-fit: cover;
+  margin: 0 0 0 0;
+  transform-origin: left top;
+  transform: scale(1.8);
+  /* height: fit-content;
+  overflow: hidden;
+  object-position: -50% -50%
+  display: flex;
+  padding: 0%;
+  margin: 0%;*/
+}
+
+.full-img {
+  background: rgb(248, 248, 182);
+  background-image: url(/imagenes/Gato.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform-origin: left top;
+  
+}
+
+.descripcion {
+  display: flex;
+  position: relative;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  flex-grow: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+.centered_text {
+  position: relative;
+  align-self: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  align-self: center;
+}
+
+#main_row {
+  height: 100%;
+}
+
+
+#nav_container {
+  background: rgb(248, 248, 182);
+
+}
+
+#cat_photos {
+  max-width: 40%;
+  max-height: 40%;
+
+}
+
+#nav_razas {
+  text-align: center;
+  font-weight: 600;
+
+}
+nav{height: 100%;}
+
+.boton_sobretugato2 {
+  position: relative;
+  align-content: flex-end;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(185, 170, 80);
+  padding: 1em 1em;
+  text-decoration: none;
+  display: flex;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin: 1em 0em;
+  text-align: center;
+  align-self: center;
+}
+
+#container_nav2 {
+  justify-content: space-between;
+  flex-direction: column;
+  
+  display: flex;
+  height: 100%;
+}
+
+#container_navSP {
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+#row_nav {
+  justify-content: space-between;
+  flex-direction: column;
+
+  display: flex;
+
+}
+
+#form>article {
+  flex: 1;
+}
+
+/* CSS design of the Result.html page */
+#result-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.result-link {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 2px;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f4dc;
+}
+
+/* CSS design of the form.html page */
+#form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+
+#form-container>h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+#formulario {
+  background: beige;
+  border: 1px solid #9e9e889c;
+  border-radius: 3.5%;
+  padding: 4%;
+  width: 32.5vw;
+  height: 360px;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 15px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #4CAF50;
+  margin-top: 2vh;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  margin-bottom: 0px;
+}
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 1.5vh 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
